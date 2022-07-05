@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    height: 100%;
+    display: block;
+}
+
+header{
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 1px solid #EFEEF3;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header-container{
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.logoicon{
+    padding-right: 13px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 1170px;
+    margin: 100px auto;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 40px;
+    width: 1170px;
+    height: 113px;
+}
+
+.logo-freehand{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+
+h3{
+    font-weight: 400;
+    font-size: 16px;
+    color: #7690A8;
+}
+
+h1{
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    min-height: 340px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    max-width: 370px;
+    min-height: 340px;
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    padding-bottom: 15px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    width: 275px;
+    height: 80px;
+    color: #16133D;
+}
+
+.card a{
+    width: 90px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DB370;
+    text-decoration: none;
+}
+
+.card:hover{
+    border: 1px solid #52C29D;
+}
+
+.card:hover path{
+    fill:#52C29D;
+}
+
+.card:hover .light{
+    fill:#E1F4F5
+}
+  
+.card:hover .superlight{
+    fill:#ffffff
+}
+
+footer{
+    background: #16133D;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 193px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 230px;
+    height: 38px;
+}
+
+.socials li{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    background: #EFEEF3;
+    border-radius: 5px;
+}
+
+.socials svg{
+    width: 20px;
+    height: 20px; 
+}
+
+.socials li:hover svg{
+    fill: #3DB370;
+}
+
+.socials svg{
+    fill:#0D0D0D
+}
+
+@media screen and (max-width: 1200px)
+{
+    header, footer{
+        padding-left: 15px;
+    }
+
+    .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    }
+
+    .card{
+        margin: 10px;
+    }
+
+    .main-container{
+        display: flex;
+        align-items:center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main-container {
+        margin: 5vh;
+        display: flex;
+    }
+    
+    .footer-container{
+        display: flex;
+        align-items: center;
+    }
+    
+    h1{
+        text-align:center;
+    }
+
+    .header-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    header, footer{
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 415px){
+    h1{
+        font-size: 30px; 
+    }
+
+    .card {
+        gap: 10px;
+        max-width: 370px;
+        min-height: 340px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x:hidden;
+    }
+
+    .cards{
+        gap: 5px;
+        overflow-x:hidden;
+    }
+
+    .text{
+        display: block;
+        margin: 0;
+    }
+}
